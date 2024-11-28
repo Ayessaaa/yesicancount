@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    @font-face {
+      font-family: workspace;
+      src: url(Workspace.otf);
+    }
+    .neucha-regular {
+      font-family: "Neucha", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+    body {
+      background-image: url("imgs/bg2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: "Poppins";
+    }
+
+  </style>
+  <body>
+    <div
+      class="w-fit mx-auto text-center mt-44 rounded-3xl bg-white/50 pt-10 pb-10 px-20 border-lime-500 border-4 shadow-lg shadow-lime-500/50 transition-all hover:scale-105 hover:bg-white hover:border-lime-600 hover:shadow-lime-600/50 hover:shadow-xl"
+    >
+      <p
+        class="text-9xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-emerald-500"
+      >
+        YES!
+      </p>
+      <p class="text-5xl font-bold text-lime-500 mt-3">I CAN 
+        <span class=" text-emerald-500">COUNT!</span>
+      </p>
+    </div>
+
+    <script>
+      function levels(){
+        window.location.href = "levels.html"
+      }
+    </script>
+
+    <div class="w-fit mx-auto">
+      <button onclick="levels()" class="group mx-auto w-fit py-3 px-10 bg-emerald-500 mt-10 rounded-xl border-4 border-emerald-600 shadow-lg shadow-emerald-600/20 hover:border-emerald-600 hover:scale-105 hover:bg-white transition-all hover:shadow-emerald-500/50">
+      <p class="text-white font-bold text-2xl group-hover:text-emerald-500">
+        But... Can I ?
+      </p>
+      
+    </button>
+    </div>
+
+
+  </body>
+</html>
