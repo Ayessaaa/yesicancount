@@ -35,16 +35,26 @@
   </style>
   <body>
     <div
-      class="w-fit mx-auto text-center mt-44 rounded-3xl bg-white/50 pt-10 pb-10 px-20 border-lime-500 border-4 shadow-lg shadow-lime-500/50 transition-all hover:scale-105 hover:bg-white hover:border-lime-600 hover:shadow-lime-600/50 hover:shadow-xl"
+      class="animate-appear mt-36 w-fit mx-auto text-center rounded-3xl pt-10 pb-10 px-20 border-lime-500 shadow-lime-500/50 transition-all group drop-shadow-md drop-shadow-emerald-500/50"
     >
       <p
-        class="text-9xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-emerald-500"
+        class="text-9xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-lime-400 via-emerald-500 to-teal-400"
       >
         YES!
       </p>
-      <p class="text-5xl font-bold text-lime-500 mt-3">I CAN 
-        <span class=" text-emerald-500">COUNT!</span>
-      </p>
+      <div
+        class="bg-white -rotate-6 -mt-6 py-1 px-5 rounded-ss-2xl rounded-ee-2xl z-10 group-hover:scale-105 transition-all"
+      >
+        <p class="text-5xl font-bold text-lime-500">
+          I <span class="text-emerald-500">CAN</span>
+          <span class="text-teal-500">COUNT!</span>
+        </p>
+      </div>
+      <div
+        class="-rotate-6 bg-teal-500 w-fit mx-auto z-0 py-0.5 px-3 rounded-b-xl group-hover:scale-110 transition-all delay-150"
+      >
+        <p class="text-white font-semibold text-lg">1.. 2.. 3...</p>
+      </div>
     </div>
 
     <script>

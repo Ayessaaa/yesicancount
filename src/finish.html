@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    @font-face {
+      font-family: workspace;
+      src: url(Workspace.otf);
+    }
+    .neucha-regular {
+      font-family: "Neucha", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+    body {
+      background-image: url("imgs/bg2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: "Poppins";
+    }
+  </style>
+  <body>
+    <script>
+      function lvl(num) {
+        window.location.href = num + ".html";
+      }
+    </script>
+    <div
+      class="w-fit mx-auto text-center mt-16 rounded-3xl pt-10 pb-10 px-20 border-lime-500 shadow-lime-500/50 transition-all group drop-shadow-md drop-shadow-emerald-500/50"
+    >
+      <p
+        class="text-9xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-lime-400 via-emerald-500 to-teal-400"
+      >
+        YES!
+      </p>
+      <div
+        class="bg-white -rotate-6 -mt-6 py-1 px-5 rounded-ss-2xl rounded-ee-2xl z-10 group-hover:scale-105 transition-all"
+      >
+        <p class="text-5xl font-bold text-lime-500">
+          I <span class="text-emerald-500">CAN</span>
+          <span class="text-teal-500">COUNT!</span>
+        </p>
+      </div>
+      <div
+        class="-rotate-6 bg-teal-500 w-fit mx-auto z-0 py-0.5 px-3 rounded-b-xl group-hover:scale-110 transition-all delay-150"
+      >
+        <p class="text-white font-semibold text-lg">Congrats!!</p>
+      </div>
+    </div>
+
+    <div class="grid gap-5 w-fit mx-auto mt-10">
+      <button
+        onclick="lvl(10)"
+        id="button10"
+        class="bg-white py-2 px-10 font-extrabold rounded-xl text-3xl border-4 border-lime-500 text-lime-600 shadow-xl shadow-lime-500/30 hover:bg-emerald-500 hover:text-white hover:border-emerald-600 hover:scale-105 transition-all hover:shadow-emerald-500/30"
+      >
+        10 =
+        <span class="font-semibold" id="span10"></span>
+      </button>
+      <button
+        onclick="lvl(20)"
+        id="button20"
+        class="bg-white py-2 px-10 font-extrabold rounded-xl text-3xl border-4 border-green-500 text-green-600 shadow-xl shadow-green-500/30 hover:bg-teal-500 hover:text-white hover:border-teal-600 hover:scale-105 transition-all hover:shadow-emerald-500/30"
+      >
+        20 =
+        <span class="font-semibold" id="span20"></span>
+      </button>
+      <button
+        onclick="lvl(30)"
+        id="button30"
+        class="bg-white py-2 px-10 font-extrabold rounded-xl text-3xl border-4 border-teal-500 text-teal-600 shadow-xl shadow-teal-500/30 hover:bg-cyan-500 hover:text-white hover:border-cyan-600 hover:scale-105 transition-all hover:shadow-emerald-500/30"
+      >
+        30 =
+        <span class="font-semibold" id="span30"></span>
+      </button>
+    </div>
+
+    <div class="w-fit mx-auto">
+      <button
+        onclick="levels()"
+        class="group mx-auto w-fit py-3 px-10 bg-emerald-500 mt-10 rounded-xl border-4 border-emerald-600 shadow-lg shadow-emerald-600/20 hover:border-emerald-600 hover:scale-105 hover:bg-white transition-all hover:shadow-emerald-500/50"
+      >
+        <p class="text-white font-bold text-2xl group-hover:text-emerald-500">
+          You really can count :D
+        </p>
+        <p class="text-sm text-white font-bold group-hover:text-emerald-500">
+          thanks for checking out my game !
+        </p>
+      </button>
+    </div>
+
+    <div class="w-fit mx-auto">
+      <button
+        onclick="github()"
+        class="group mx-auto w-fit py-3 px-7 bg-teal-500 mt-5 rounded-xl border-4 border-teal-600 shadow-lg shadow-teal-600/20 hover:border-teal-600 hover:scale-105 hover:bg-white transition-all hover:shadow-teal-500/50"
+      >
+        <p class="text-white font-bold text-2xl group-hover:text-teal-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 inline stroke-2 mr-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+            />
+          </svg>
+
+          Github Repo
+        </p>
+      </button>
+    </div>
+
+    <script>
+      const span10 = document.getElementById("span10");
+      const span20 = document.getElementById("span20");
+      const span30 = document.getElementById("span30");
+
+      if (sessionStorage.getItem("10") === null) {
+        const button10 = document.getElementById("button10");
+        button10.classList.add("hidden");
+      } else {
+        span10.innerText = sessionStorage.getItem("10") + "s";
+      }
+
+      if (sessionStorage.getItem("20") === null) {
+        const button20 = document.getElementById("button20");
+        button20.classList.add("hidden");
+      } else {
+        span20.innerText = sessionStorage.getItem("20") + "s";
+      }
+
+      if (sessionStorage.getItem("30") === null) {
+        const button30 = document.getElementById("button30");
+        button30.classList.add("hidden");
+      } else {
+        span30.innerText = sessionStorage.getItem("30") + "s";
+      }
+
+      function github(){
+        window.location.href = "https://github.com/Ayessaaa/yesicancount"
+      }
+    </script>
+  </body>
+</html>

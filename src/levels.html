@@ -34,8 +34,8 @@
   </style>
   <body>
     <script>
-      function lvl10(){
-        window.location.href = "10.html"
+      function lvl(num){
+        window.location.href = num+".html"
       }
     </script>
     <div
@@ -61,20 +61,20 @@
     </div>
 
     <div class="grid gap-5 w-fit mx-auto mt-10">
-      <button onclick="lvl10()"
+      <button onclick="lvl(10)"
         class="bg-white py-2 px-10 font-extrabold rounded-xl text-3xl border-4 border-lime-500 text-lime-600 shadow-xl shadow-lime-500/30 hover:bg-emerald-500 hover:text-white hover:border-emerald-600 hover:scale-105 transition-all hover:shadow-emerald-500/30"
       >
         10
       </button>
-      <button
+      <button onclick="lvl(20)"
         class="bg-white py-2 px-10 font-extrabold rounded-xl text-3xl border-4 border-green-500 text-green-600 shadow-xl shadow-green-500/30 hover:bg-teal-500 hover:text-white hover:border-teal-600 hover:scale-105 transition-all hover:shadow-emerald-500/30"
       >
         20 !
       </button>
-      <button
+      <button onclick="lvl(30)"
         class="bg-white py-2 px-10 font-extrabold rounded-xl text-3xl border-4 border-teal-500 text-teal-600 shadow-xl shadow-teal-500/30 hover:bg-cyan-500 hover:text-white hover:border-cyan-600 hover:scale-105 transition-all hover:shadow-emerald-500/30"
       >
-        50 !!!
+        30 !!!
       </button>
     </div>
   </body>

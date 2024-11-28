@@ -31,34 +31,94 @@
       background-repeat: no-repeat;
       font-family: "Poppins";
     }
-    .w-1-10 {
-      width: 10%;
+    .w-1-30 {
+      width: 3.3%;
     }
-    .w-2-10 {
-      width: 20%;
+    .w-2-30 {
+      width: 6.6%;
     }
-    .w-3-10 {
-      width: 30%;
+    .w-3-30 {
+      width: 9.9%;
     }
-    .w-4-10 {
-      width: 40%;
+    .w-4-30 {
+      width: 13.12%;
     }
-    .w-5-10 {
-      width: 50%;
+    .w-5-30 {
+      width: 16.5%;
     }
-    .w-6-10 {
-      width: 60%;
+    .w-6-30 {
+      width: 19.8%;
     }
-    .w-7-10 {
-      width: 70%;
+    .w-7-30 {
+      width: 23.1%;
     }
-    .w-8-10 {
-      width: 80%;
+    .w-8-30 {
+      width: 26.4%;
     }
-    .w-9-10 {
-      width: 90%;
+    .w-9-30 {
+      width: 29.7%;
     }
-    .w-10-10 {
+    .w-10-30 {
+      width: 33%;
+    }
+    .w-11-30 {
+      width: 36.3%;
+    }
+    .w-12-30 {
+      width: 39.6%;
+    }
+    .w-13-30 {
+      width: 42.9%;
+    }
+    .w-14-30 {
+      width: 46.2%;
+    }
+    .w-15-30 {
+      width: 49.5%;
+    }
+    .w-16-30 {
+      width: 52.8%;
+    }
+    .w-17-30 {
+      width: 56.1%;
+    }
+    .w-18-30 {
+      width: 59.4%;
+    }
+    .w-19-30 {
+      width: 62.7%;
+    }
+    .w-20-30 {
+      width: 66%;
+    }
+    .w-21-30 {
+      width: 69.3%;
+    }
+    .w-22-30 {
+      width: 72.6%;
+    }
+    .w-23-30 {
+      width: 75.9%;
+    }
+    .w-24-30 {
+      width: 79.2%;
+    }
+    .w-25-30 {
+      width: 82.5%;
+    }
+    .w-26-30 {
+      width: 85.8%;
+    }
+    .w-27-30 {
+      width: 89.1%;
+    }
+    .w-28-30 {
+      width: 92.4%;
+    }
+    .w-29-30 {
+      width: 95.7%;
+    }
+    .w-30-30 {
       width: 100%;
     }
   </style>
@@ -75,8 +135,8 @@
         if (i.toString() == button.innerText) {
           const bar = document.getElementById("bar");
           bar.classList.remove(`w-0`);
-          bar.classList.remove(`w-${i - 1}-10`);
-          bar.classList.add(`w-${i}-10`);
+          bar.classList.remove(`w-${i - 1}-30`);
+          bar.classList.add(`w-${i}-30`);
 
           const numbers = document.querySelectorAll(".number");
           numbers[i - 1].classList.remove("text-neutral-300");
@@ -84,7 +144,7 @@
         } else {
           const bar = document.getElementById("bar");
           bar.classList.add(`w-0`);
-          bar.classList.remove(`w-${i - 1}-10`);
+          bar.classList.remove(`w-${i - 1}-30`);
 
           const numbers = document.querySelectorAll(".number");
           numbers.forEach((number) => {
@@ -94,7 +154,7 @@
           i = 1;
         }
 
-        if (i === 11) {
+        if (i === 31) {
           isDone = true;
           jsConfetti.addConfetti({
             confettiColors: [
@@ -130,7 +190,7 @@
       <div
         class="-rotate-6 bg-teal-500 w-fit mx-auto z-0 py-0.5 px-3 rounded-b-xl group-hover:scale-110 transition-all delay-150"
       >
-        <p class="text-white font-semibold text-lg">Level 10</p>
+        <p class="text-white font-semibold text-lg">Level 30</p>
       </div>
     </div>
 
@@ -161,6 +221,26 @@
           <span class="number text-neutral-300 transition-all">8 </span>
           <span class="number text-neutral-300 transition-all">9 </span>
           <span class="number text-neutral-300 transition-all">10 </span>
+          <span class="number text-neutral-300 transition-all">11</span>
+          <span class="number text-neutral-300 transition-all">12 </span>
+          <span class="number text-neutral-300 transition-all">13 </span>
+          <span class="number text-neutral-300 transition-all">14 </span>
+          <span class="number text-neutral-300 transition-all">15 </span>
+          <span class="number text-neutral-300 transition-all">16 </span>
+          <span class="number text-neutral-300 transition-all">17 </span>
+          <span class="number text-neutral-300 transition-all">18 </span>
+          <span class="number text-neutral-300 transition-all">19 </span>
+          <span class="number text-neutral-300 transition-all">20 </span>
+          <span class="number text-neutral-300 transition-all">21</span>
+          <span class="number text-neutral-300 transition-all">22 </span>
+          <span class="number text-neutral-300 transition-all">23 </span>
+          <span class="number text-neutral-300 transition-all">24 </span>
+          <span class="number text-neutral-300 transition-all">25 </span>
+          <span class="number text-neutral-300 transition-all">26 </span>
+          <span class="number text-neutral-300 transition-all">27 </span>
+          <span class="number text-neutral-300 transition-all">28 </span>
+          <span class="number text-neutral-300 transition-all">29 </span>
+          <span class="number text-neutral-300 transition-all">30 </span>
         </p>
         <p
           class="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-lime-500 via-emerald-500 to-teal-400"
@@ -178,67 +258,209 @@
         id="button1"
         class="font-bold text-2xl w-16 text-lime-500 shadow-md rounded-xl bg-lime-100 shadow-lime-500/50 hover:scale-105 transition-all hover:bg-lime-200 hover:text-lime-600"
       >
-        3
+      4
       </button>
       <button
         onclick="tapped(2)"
         id="button2"
         class="font-bold text-2xl w-16 text-green-500 shadow-md rounded-xl bg-green-100 shadow-green-500/50 hover:scale-105 transition-all hover:bg-green-200 hover:text-green-600"
       >
-        1
+      23
       </button>
       <button
         onclick="tapped(3)"
         id="button3"
         class="font-bold text-2xl w-16 text-teal-500 shadow-md rounded-xl bg-teal-100 shadow-teal-500/50 hover:scale-105 transition-all hover:bg-teal-200 hover:text-teal-600"
       >
-        10
+        6
       </button>
       <button
         onclick="tapped(4)"
         id="button4"
         class="font-bold text-2xl w-16 text-lime-500 shadow-md rounded-xl bg-lime-100 shadow-lime-500/50 hover:scale-105 transition-all hover:bg-lime-200 hover:text-lime-600"
       >
-        4
+        29
       </button>
       <button
         onclick="tapped(5)"
         id="button5"
         class="font-bold text-2xl w-16 text-emerald-500 shadow-md rounded-xl bg-emerald-100 shadow-emerald-500/50 hover:scale-105 transition-all hover:bg-emerald-200 hover:text-emerald-600"
       >
-        5
+        16
       </button>
       <button
         onclick="tapped(6)"
         id="button6"
         class="font-bold text-2xl w-16 text-teal-500 shadow-md rounded-xl bg-teal-100 shadow-teal-500/50 hover:scale-105 transition-all hover:bg-teal-200 hover:text-teal-600"
       >
-        8
+      19
       </button>
       <button
         onclick="tapped(7)"
         id="button7"
         class="font-bold text-2xl w-16 text-lime-500 shadow-md rounded-xl bg-lime-100 shadow-lime-500/50 hover:scale-105 transition-all hover:bg-lime-200 hover:text-lime-600"
       >
-        7
+        30
       </button>
       <button
         onclick="tapped(8)"
         id="button8"
         class="font-bold text-2xl w-16 text-green-500 shadow-md rounded-xl bg-green-100 shadow-green-500/50 hover:scale-105 transition-all hover:bg-green-200 hover:text-green-600"
       >
-        2
+        17
       </button>
       <button
         onclick="tapped(9)"
         id="button9"
         class="font-bold text-2xl w-16 text-teal-500 shadow-md rounded-xl bg-teal-100 shadow-teal-500/50 hover:scale-105 transition-all hover:bg-teal-200 hover:text-teal-600"
       >
-        6
+      24
       </button>
       <button
         onclick="tapped(10)"
         id="button10"
+        class="font-bold text-2xl w-16 text-lime-500 shadow-md rounded-xl bg-lime-100 shadow-lime-500/50 hover:scale-105 transition-all hover:bg-lime-200 hover:text-lime-600"
+      >
+        5
+      </button>
+
+      <button
+        onclick="tapped(11)"
+        id="button11"
+        class="font-bold text-2xl w-16 text-lime-500 shadow-md rounded-xl bg-lime-100 shadow-lime-500/50 hover:scale-105 transition-all hover:bg-lime-200 hover:text-lime-600"
+      >
+        2
+      </button>
+      <button
+        onclick="tapped(12)"
+        id="button12"
+        class="font-bold text-2xl w-16 text-green-500 shadow-md rounded-xl bg-green-100 shadow-green-500/50 hover:scale-105 transition-all hover:bg-green-200 hover:text-green-600"
+      >
+      26
+      </button>
+      <button
+        onclick="tapped(13)"
+        id="button13"
+        class="font-bold text-2xl w-16 text-teal-500 shadow-md rounded-xl bg-teal-100 shadow-teal-500/50 hover:scale-105 transition-all hover:bg-teal-200 hover:text-teal-600"
+      >
+      13
+      </button>
+      <button
+        onclick="tapped(14)"
+        id="button14"
+        class="font-bold text-2xl w-16 text-lime-500 shadow-md rounded-xl bg-lime-100 shadow-lime-500/50 hover:scale-105 transition-all hover:bg-lime-200 hover:text-lime-600"
+      >
+      18
+      </button>
+      <button
+        onclick="tapped(15)"
+        id="button15"
+        class="font-bold text-2xl w-16 text-emerald-500 shadow-md rounded-xl bg-emerald-100 shadow-emerald-500/50 hover:scale-105 transition-all hover:bg-emerald-200 hover:text-emerald-600"
+      >
+      25
+      </button>
+      <button
+        onclick="tapped(16)"
+        id="button16"
+        class="font-bold text-2xl w-16 text-teal-500 shadow-md rounded-xl bg-teal-100 shadow-teal-500/50 hover:scale-105 transition-all hover:bg-teal-200 hover:text-teal-600"
+      >
+        20
+      </button>
+      <button
+        onclick="tapped(17)"
+        id="button17"
+        class="font-bold text-2xl w-16 text-lime-500 shadow-md rounded-xl bg-lime-100 shadow-lime-500/50 hover:scale-105 transition-all hover:bg-lime-200 hover:text-lime-600"
+      >
+        14
+      </button>
+      <button
+        onclick="tapped(18)"
+        id="button18"
+        class="font-bold text-2xl w-16 text-green-500 shadow-md rounded-xl bg-green-100 shadow-green-500/50 hover:scale-105 transition-all hover:bg-green-200 hover:text-green-600"
+      >
+      11
+      </button>
+      <button
+        onclick="tapped(19)"
+        id="button19"
+        class="font-bold text-2xl w-16 text-teal-500 shadow-md rounded-xl bg-teal-100 shadow-teal-500/50 hover:scale-105 transition-all hover:bg-teal-200 hover:text-teal-600"
+      >
+        8
+      </button>
+      <button
+        onclick="tapped(20)"
+        id="button20"
+        class="font-bold text-2xl w-16 text-lime-500 shadow-md rounded-xl bg-lime-100 shadow-lime-500/50 hover:scale-105 transition-all hover:bg-lime-200 hover:text-lime-600"
+      >
+        3
+      </button>
+
+      <button
+        onclick="tapped(21)"
+        id="button21"
+        class="font-bold text-2xl w-16 text-lime-500 shadow-md rounded-xl bg-lime-100 shadow-lime-500/50 hover:scale-105 transition-all hover:bg-lime-200 hover:text-lime-600"
+      >
+        21
+      </button>
+      <button
+        onclick="tapped(22)"
+        id="button22"
+        class="font-bold text-2xl w-16 text-green-500 shadow-md rounded-xl bg-green-100 shadow-green-500/50 hover:scale-105 transition-all hover:bg-green-200 hover:text-green-600"
+      >
+      12
+      </button>
+      <button
+        onclick="tapped(23)"
+        id="button23"
+        class="font-bold text-2xl w-16 text-teal-500 shadow-md rounded-xl bg-teal-100 shadow-teal-500/50 hover:scale-105 transition-all hover:bg-teal-200 hover:text-teal-600"
+      >
+      7
+      </button>
+      <button
+        onclick="tapped(24)"
+        id="button24"
+        class="font-bold text-2xl w-16 text-lime-500 shadow-md rounded-xl bg-lime-100 shadow-lime-500/50 hover:scale-105 transition-all hover:bg-lime-200 hover:text-lime-600"
+      >
+      10
+      </button>
+      <button
+        onclick="tapped(25)"
+        id="button25"
+        class="font-bold text-2xl w-16 text-emerald-500 shadow-md rounded-xl bg-emerald-100 shadow-emerald-500/50 hover:scale-105 transition-all hover:bg-emerald-200 hover:text-emerald-600"
+      >
+      22
+      </button>
+      <button
+        onclick="tapped(26)"
+        id="button26"
+        class="font-bold text-2xl w-16 text-teal-500 shadow-md rounded-xl bg-teal-100 shadow-teal-500/50 hover:scale-105 transition-all hover:bg-teal-200 hover:text-teal-600"
+      >
+        1
+      </button>
+      <button
+        onclick="tapped(27)"
+        id="button27"
+        class="font-bold text-2xl w-16 text-lime-500 shadow-md rounded-xl bg-lime-100 shadow-lime-500/50 hover:scale-105 transition-all hover:bg-lime-200 hover:text-lime-600"
+      >
+        27
+      </button>
+      <button
+        onclick="tapped(28)"
+        id="button28"
+        class="font-bold text-2xl w-16 text-green-500 shadow-md rounded-xl bg-green-100 shadow-green-500/50 hover:scale-105 transition-all hover:bg-green-200 hover:text-green-600"
+      >
+        15
+      </button>
+      <button
+        onclick="tapped(29)"
+        id="button29"
+        class="font-bold text-2xl w-16 text-teal-500 shadow-md rounded-xl bg-teal-100 shadow-teal-500/50 hover:scale-105 transition-all hover:bg-teal-200 hover:text-teal-600"
+      >
+        28
+      </button>
+      <button
+        onclick="tapped(30)"
+        id="button30"
         class="font-bold text-2xl w-16 text-lime-500 shadow-md rounded-xl bg-lime-100 shadow-lime-500/50 hover:scale-105 transition-all hover:bg-lime-200 hover:text-lime-600"
       >
         9
@@ -250,16 +472,12 @@
       onclick="nextlevel()"
       class="opacity-0 scale-110 bg-white w-fit mx-auto mt-14 rounded-full border-4 border-emerald-600 font-bold text-emerald-500 shadow-emerald-500/20 shadow-lg hover:scale-105 hover:bg-emerald-500 hover:text-white transition-all hover:shadow-emerald-500/50"
     >
-      <button class="px-7 py-2 text-2xl">Next Level !</button>
+      <button class="px-7 py-2 text-2xl">Finish !</button>
     </div>
 
     <script>
       const timer = document.getElementById("timer");
       var seconds = 0;
-
-      for (let i = 1; i <= 10; i++) {
-        const element = document.getElementById("button" + i);
-      }
 
       setInterval(function () {
         if (!isDone) {
@@ -277,8 +495,8 @@
       }, 1000);
 
       function nextlevel() {
-        sessionStorage.setItem("10", seconds)
-        window.location.href = "20.html";
+        sessionStorage.setItem("30", seconds)
+        window.location.href = "finish.html";
       }
     </script>
   </body>
