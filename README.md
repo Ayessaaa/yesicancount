@@ -1,4 +1,4 @@
-﻿# Yes! I Can Count!
+# Yes! I Can Count!
 ### You have to tap the numbers in sequence
 
 This games objective is for you to tap the numbers in the screen from lowest to highest fast! This game contains of 3 levels where each level is significantly more difficult than the previous one.
@@ -22,7 +22,7 @@ git clone https://github.com/Ayessaaa/yesicancount
 ```
 2. Go to the directory
 ```
-cd programminglanguage
+cd yesicancount
 ```
 3. Install dependecies
 ```
